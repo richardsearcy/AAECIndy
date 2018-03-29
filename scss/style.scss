@@ -95,6 +95,27 @@ header {
   }
 }
 
+.overlay-7 {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  max-width: 600px;
+  padding: 10px;
+
+  h2 {
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: italic;
+    line-height: 1;
+    font-weight: bold;
+    color: #b90f08;
+    text-shadow: 0 1px 3px #333;  
+  }
+  
+  h3 {
+      color: #333;
+  }
+}
+
 .overlay-address {
     font-family:'Lato';
     font-size:27px;
@@ -228,12 +249,12 @@ ul > li > a:active {
 .team-heading {
     color: #5bc2d1;//#008080;
     font-family: "Roboto", Helvetica, sans-serif;
-    font-size: 1.1em;
+    font-size: 1.7em;
     font-style: italic;
     font-weight: bold;
     padding-left: 20px;
     text-align: left;
-    text-shadow: 0 1px 3px #777;
+    text-shadow: 0 1px 3px #333;
 }
 
 /* FIND US

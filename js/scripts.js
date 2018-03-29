@@ -1,7 +1,6 @@
 $(document).ready(function() {
     
     smoothScroll();
-    console.log("smoothScroll called!");
     
     
     /* Use scrollspy to highlight links as the user scrolls down the page
@@ -24,31 +23,13 @@ $(document).ready(function() {
     
 });
 
-/*function smoothScroll() {
-    console.log("smoothScroll called!");
-    $('a[href*=\\#]').each(function () {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-                && location.hostname == this.hostname
-                && this.hash.replace(/#/, '')) {
-            var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) + ']');
-            var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
-            if ($target) {
-                var $targetOffset = $target.offset().top;
-                console.log($targetOffset);
-                $(this).click(function () {
-                    $("nav li a").removeClass("active");
-                    $(this).addClass('active');
-                    $('html, body').animate({scrollTop: $targetOffset}, 1000);
-                    return false;
-                });
-            }
-        }
-    });
-} */
-
+/*
+ * Set up smooth scrolling to anchors (IDs) for each section
+ * 
+ */
 function smoothScroll() {
 
-    $('a[href*=#]:not([href=#])').click(function () {
+    $('a[href*=\\#]:not([href=\\#])').click(function () {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -63,11 +44,20 @@ function smoothScroll() {
     });
 }
 
+
+/*
+ * Call the smoothScroll function after the Get Directions button is pressed
+ * to update the successive section lengths
+ */
 $("#get-directions").on('click', function () {
     smoothScroll();
 });
     
 
+
+/*
+ * 
+ */
 $('#nav-toggle').click(function() {
   $('nav ul').toggle();
 });
@@ -111,3 +101,6 @@ $('#coverLetter, #resume').change(function(event){
         $(this).next('.custom-file-label').html(fileName);
     }
 });
+
+
+
