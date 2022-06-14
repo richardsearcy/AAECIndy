@@ -1,0 +1,359 @@
+/*
+Airport Animal Emergi-Center
+Author: Richard Searcy
+*/
+/* GENERAL STYLES
+-------------------------------------------------*/
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  color: #777;
+  font-weight: 300;
+  line-height: 1.7;
+  overflow-x: hidden;
+  position: relative; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+  line-height: 1.4;
+  font-weight: 700; }
+
+.mx-width {
+  max-width: 960px;
+  margin: 0 auto; }
+
+a, a:hover {
+  color: #563d7c;
+  text-decoration: none; }
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto; }
+
+.card {
+  margin-bottom: 30px; }
+  .card h4 {
+    margin-top: 20px;
+    text-align: center; }
+  .card dl {
+    margin-left: 10px; }
+  .card dt {
+    text-align: right; }
+  .card dd {
+    color: #555; }
+  .card p {
+    color: #555;
+    margin: 0 20px 20px; }
+
+.card-img-top {
+  width: 100%;
+  height: auto; }
+
+.overlay {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  max-width: 600px;
+  padding: 10px; }
+  .overlay h2 {
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: italic;
+    line-height: 1;
+    font-weight: bold;
+    color: #b90f08;
+    text-shadow: 0 1px 3px #333; }
+  .overlay h3 {
+    color: #333; }
+
+.overlay-7 {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  max-width: 600px;
+  padding: 10px; }
+  .overlay-7 h2 {
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: italic;
+    line-height: 1;
+    font-weight: bold;
+    color: #b90f08;
+    text-shadow: 0 1px 3px #333; }
+  .overlay-7 h3 {
+    color: #333; }
+
+.overlay-address {
+  font-family: 'Lato';
+  font-size: 27px;
+  line-height: 1.4;
+  font-weight: 300;
+  color: #fff; }
+
+.jumbotron-fluid {
+  padding: 0; }
+
+/* NAVIGATION
+-------------------------------------------------*/
+.navbar {
+  opacity: 0.8 !important; }
+
+#navbarText {
+  margin-left: 30px; }
+
+.call-to-action {
+  font-style: italic;
+  font-weight: bold;
+  color: #444;
+  font: italic bold 1.2em/1.2 "Roboto", Helvetica, Arial, sans-serif;
+  letter-spacing: -0.04em;
+  margin-bottom: 0; }
+  .call-to-action a {
+    color: #be0000 !important;
+    text-decoration: none;
+    text-shadow: 0 1px 3px #333; }
+  .call-to-action.d-block.d-md-none {
+    font-size: 0.9em; }
+
+ul > li > a.active {
+  font-weight: bold; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0, 0, 0, 0.7); }
+
+/* PARALLAX
+-------------------------------------------------*/
+.parallax {
+  text-align: center;
+  background-position: center 60px;
+  /* Push the background image down 60px to clear navbar */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed !important;
+  overflow: hidden;
+  padding: 0 50px; }
+
+.parallax-pattern-overlay {
+  /*background-image: url(../img/pattern.png);*/
+  background-repeat: repeat; }
+
+#size-banner {
+  height: 580px;
+  padding-top: 170px; }
+
+/* HEADING
+-------------------------------------------------*/
+.heading {
+  padding-bottom: 15px;
+  text-align: center;
+  max-width: 960px;
+  margin: 0 auto; }
+  .heading h2 {
+    font-weight: 600;
+    font-family: 'Roboto';
+    font-size: 40px;
+    color: #333;
+    margin: 0;
+    padding: 5px; }
+  .heading h3 {
+    font-size: 1em;
+    line-height: 1.7; }
+
+.heading-inverse {
+  padding-bottom: 15px;
+  text-align: center;
+  max-width: 960px;
+  margin: 0 auto 20px; }
+  .heading-inverse h2 {
+    font-weight: 600;
+    font-family: 'Roboto';
+    font-size: 40px;
+    color: #fff;
+    margin: 0;
+    padding: 5px; }
+
+.aboutus, .findus, .ourteam, .services, .workforus {
+  padding-top: 90px;
+  margin-top: -40px; }
+
+.aboutus {
+  padding-bottom: 40px; }
+
+/* OUR TEAM
+-------------------------------------------------*/
+.ourteam p {
+  color: #333;
+  font-size: 1.1em;
+  padding-left: 20px;
+  text-align: left; }
+
+.team-heading {
+  color: #5bc2d1;
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-size: 1.7em;
+  font-style: italic;
+  font-weight: bold;
+  padding-left: 20px;
+  text-align: left;
+  text-shadow: 0 1px 3px #333; }
+
+/* FIND US
+-------------------------------------------------*/
+#map_canvas {
+  height: 400px;
+  margin-bottom: 50px;
+  width: 100%; }
+
+.blue.accent-1 {
+  background-color: #5bc2d1; }
+
+.form-header {
+  border-radius: 2px;
+  margin-bottom: 1rem;
+  margin-top: -50px;
+  padding: 1rem;
+  text-align: center; }
+  .form-header h3 {
+    color: #fff; }
+
+#start-directions #print {
+  display: none; }
+
+#directions {
+  margin-bottom: 40px;
+  position: relative; }
+
+/* SERVICES
+-------------------------------------------------*/
+#services div.overlay-7 {
+  margin-bottom: 20px;
+  max-width: 960px; }
+
+#services p {
+  color: #333;
+  font-size: 1.1em;
+  text-align: left; }
+
+#services ul {
+  color: #333;
+  margin: 20px 0; }
+
+#services ul > li {
+  font-size: 1.1em;
+  margin: 0 auto;
+  text-align: left;
+  width: 80%; }
+
+#services h4 {
+  text-align: left; }
+
+/* WORK FOR US
+-------------------------------------------------*/
+#employment_form {
+  margin-bottom: 20px; }
+
+input.form-control {
+  background: #fff;
+  border: solid 1px #ddd;
+  color: #000;
+  padding: 15px 30px;
+  margin-right: 3%;
+  margin-bottom: 30px;
+  outline: none;
+  border-radius: 0; }
+
+textarea.form-control {
+  background: #fff;
+  color: #000;
+  border: solid 1px #ddd;
+  padding: 15px 30px;
+  margin-bottom: 40px;
+  outline: none;
+  height: 200px;
+  border-radius: 0; }
+
+button.contact.submit {
+  background: #333;
+  font-family: 'Lato',sans-serif;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  border: none !important;
+  border-radius: 3px;
+  padding: 15px 45px; }
+
+button.contact.submit:hover {
+  background: #563d7c; }
+
+.form-control:focus {
+  border-color: #563d7c;
+  outline: 0; }
+
+.done {
+  display: none; }
+
+/* FOOTER
+-------------------------------------------------*/
+.footer {
+  position: relative; }
+  .footer .upper-footer {
+    background-color: #f8f9fa;
+    padding-top: 20px; }
+    .footer .upper-footer h5 {
+      text-transform: uppercase; }
+  .footer .lower-footer {
+    background-color: #5bc2d1;
+    color: #fff;
+    padding: 10px 0 10px 10px; }
+  .footer ul {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    text-align: center;
+    list-style-type: none;
+    padding-left: 0; }
+    .footer ul li {
+      text-align: center;
+      display: inline-block;
+      background: rgba(0, 0, 0, 0.2);
+      color: #fff;
+      line-height: 45px;
+      margin: 0 4px;
+      width: 45px !important;
+      height: 45px !important;
+      -webkit-border-radius: 3px;
+      border-radius: 3px; }
+      .footer ul li:hover {
+        background: #2a2a2a;
+        color: #fff; }
+    .footer ul a {
+      color: #fff;
+      width: 42px !important;
+      height: 42px !important; }
+      .footer ul a:hover {
+        color: #fff; }
+      .footer ul a i {
+        line-height: 45px;
+        color: #fff; }
+  .footer p {
+    color: #333;
+    font-size: .9em;
+    line-height: 24px;
+    font-weight: 300;
+    text-align: left; }
+
+/* MEDIA QUERIES
+-------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  input.contact.col-md-6 {
+    width: 40.5%;
+    margin: 15px 15px 0 58px; }
+
+  textarea.contact.col-md-12 {
+    margin: 15px 15px 0 58px; }
+
+  button#submit.contact.submit {
+    margin: 15px 15px 0 42px; } }
+
+/*# sourceMappingURL=style.css.map */
